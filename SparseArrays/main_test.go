@@ -1,11 +1,12 @@
 package main
 
+import "fmt"
+
 func Example_matchingStrings() {
-	testArray := []string{"-4", "3", "-9", "0"}
-	matchingStrings(testArray, testArray)
+	strings := []string{"-4", "-4", "-9", "0"}
+	queries := []string{"-4", "3", "-9", "0"}
+	fmt.Println(matchingStrings(strings, queries))
 	// Output:
-	// 0.5
-	//0.33333334
-	//0.16666667
+	// [2 0 1 1]
 
 }
