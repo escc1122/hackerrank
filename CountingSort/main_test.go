@@ -2,10 +2,10 @@ package main
 
 import "fmt"
 
-func Example_diagonalDifference() {
-	test := [][]int32{{11, 2, 4}, {4, 5, 6}, {10, 8, -12}}
-	fmt.Println(diagonalDifference(test))
+func Example_countingSort() {
+	test := []int32{11, 2, 4, 6, 7, 2, 22, 99}
+	fmt.Println(countingSort(test))
 	// Output:
-	// 15
+	// [0 0 2 0 1 0 1 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1]
 
 }
